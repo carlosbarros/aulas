@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AppCadastro</string>
+    <string name="dan_ar">Dançar</string>
+    <string name="digite_seu_e_mail">Digite seu e-mail</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="fem">Fem</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="ler">Ler</string>
+    <string name="masc">Masc</string>
+    <string name="salvar">Salvar</string>
+    <string name="sexo">Sexo</string>
+    <string name="viajar">Viajar</string>
+    <string name="foto">Foto</string>
+    <string-array name="times">
+        <item>Atlético MG</item>
+        <item>Atlético PR</item>
+        <item>Botafogo</item>
+        <item>Corinthians</item>
+        <item>Cruzeiro</item>
+        <item>Flamengo</item>
+        <item>Fluminense</item>
+        <item>Grêmio</item>
+        <item>Internacional</item>
+        <item>Santos</item>
+        <item>São Paulo</item>
+        <item>Vasco</item>
+        <item>Vitória</item>
+    </string-array>
+
+</resources>
