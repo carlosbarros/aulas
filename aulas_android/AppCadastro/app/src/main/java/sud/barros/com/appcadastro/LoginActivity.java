@@ -22,8 +22,6 @@ public class LoginActivity extends AppCompatActivity {
         etSenha = (EditText)findViewById(R.id.etSenha);
         btLogar = (Button)findViewById(R.id.btLogar);
 
-
-
         btLogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

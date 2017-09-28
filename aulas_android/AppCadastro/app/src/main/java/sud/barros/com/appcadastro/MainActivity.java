@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent i = getIntent();
+
 
         etNome = (EditText)findViewById(R.id.etNome);
         etEmail = (EditText)findViewById(R.id.etEmail);
@@ -61,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cbViajar = (CheckBox) findViewById(R.id.cbViajar);
         cbDancar = (CheckBox) findViewById(R.id.cbDancar);
         imgFoto = (ImageView)findViewById(R.id.imgFoto);
+
+        Intent i = getIntent();
 
         String email = i.getStringExtra("email");
         etEmail.setText(email);
@@ -142,7 +144,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String nome = etNome.getText().toString();
                 String email = etEmail.getText().toString();
                 String time = spTimes.getSelectedItem().toString();
+
+
                 Toast.makeText(getApplicationContext(),"Ola"+ etNome.getText().toString(),Toast.LENGTH_LONG).show();
+
+
+
+
+
                 break;
             case R.id.btChoose:
                 showFileChooser();
