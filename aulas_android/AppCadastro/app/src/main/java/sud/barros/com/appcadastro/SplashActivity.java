@@ -19,7 +19,7 @@ public class SplashActivity extends AppCompatActivity  implements Runnable{
         //próxima tela
         setContentView(R.layout.activity_splash);
         Handler h = new Handler();
-        h.postDelayed(this,3500);
+        h.postDelayed(this,300);
     }
 
     @Override

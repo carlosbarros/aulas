@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/common_google_signin_btn_icon_dark"
     android:orientation="vertical"
-    android:weightSum="1"
-    tools:context="sud.barros.com.appcadastro.SplashActivity">
+    tools:context="sud.barros.com.appcadastro.ListarActivity">
 
-
+    <ListView
+        android:id="@+id/lvLista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

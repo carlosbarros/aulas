@@ -5,31 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="sud.barros.com.appcadastro.LoginActivity">
-
+    tools:context="sud.barros.com.appcadastro.CadastroActivity">
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etModelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Digite seu e-mail"
-        android:inputType="textEmailAddress"
-        android:text="carlos@gmail.com" />
+        android:hint="Digite o modelo"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etSenha"
+        android:id="@+id/etMarca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Digite sua senha"
-        android:inputType="textPassword"
-        android:text="123" />
+        android:hint="Digite a marca"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite a placa"
+        android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/btLogar"
+        android:id="@+id/btSalvar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/entrar" />
-
+        android:text="Salvar" />
 </LinearLayout>
