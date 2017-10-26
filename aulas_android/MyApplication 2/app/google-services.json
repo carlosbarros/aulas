@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "430685717566",
+    "firebase_url": "https://appagenda-a457c.firebaseio.com",
+    "project_id": "appagenda-a457c",
+    "storage_bucket": "appagenda-a457c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430685717566:android:467b2856bc48e6ba",
+        "android_client_info": {
+          "package_name": "com.example.marcia.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430685717566-7kv4m8sacrjgdvtuh9odc1cdmuqvbou7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.marcia.myapplication",
+            "certificate_hash": "C64F6FC67244A4A5496F940B18E67C62BCF89012"
+          }
+        },
+        {
+          "client_id": "430685717566-otu5l22c0or1umef4k7utbajv1lv7s3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnL6wZ39wbBWCPplofu4W78mgMjC3F4oM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430685717566-otu5l22c0or1umef4k7utbajv1lv7s3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

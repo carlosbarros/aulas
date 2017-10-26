@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="suaagenda">Sua Agenda!</string>
+    <string name="logar">Logar</string>
+    <string name="registro"><u>Novo Usuário</u></string>
+    <string name="enviarsenha">Cadastre-se</string>
+    <string name="email">E-mail</string>
+    <string name="enviar">Enviar</string>
+    <string name="registrar">Registrar</string>
+    <string name="nome">Nome</string>
+    <string name="funcao">Função</string>
+    <string name="sexo">Sexo</string>
+    <string name="masc">Masc</string>
+    <string name="fem">Fem</string>
+    <string name="hobbie">Hobbies</string>
+    <string name="dancar">Dançar</string>
+    <string name="viajar">Viajar</string>
+    <string name="ler">Ler</string>
+    <string name="salvar">Salvar</string>
+    <string name="voltar">Voltar</string>
+    <string name="contatos">Contatos</string>
+    <string name="adicionar">Novo</string>
+    <string name="senha">Senha</string>
+    <string name="excluir">EXCLUIR</string>
+    <string name="editar">EDITAR</string>
+    <string name="title_activity_contatos_list">ContatosArrayList</string>
+    <string name="emaildefault">adm@gmail.com</string>
+    <string name="senhadefault">123</string>
+
+    <string name="nome_obrigatorio">O nome é de preenchimento obrigatório!</string>
+    <string name="email_obrigatorio">O email é de preenchimento obrigatório!</string>
+    <string name="endereco_obrigatorio">O endereço é de preenchimento obrigatório!</string>
+    <string name="sexo_obrigatorio">O sexo é de preenchimento obrigatório!</string>
+    <string name="data_nascimento_obrigatorio">A data de nascimento é de preenchimento obrigatório!</string>
+    <string name="registro_salvo_sucesso">Registro salvo com sucesso!</string>
+
+</resources>
