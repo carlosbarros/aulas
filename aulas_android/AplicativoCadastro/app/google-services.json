@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "215481582609",
+    "firebase_url": "https://aplicativocadastro.firebaseio.com",
+    "project_id": "aplicativocadastro",
+    "storage_bucket": "aplicativocadastro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215481582609:android:f9f51821498c1c50",
+        "android_client_info": {
+          "package_name": "sud.barros.com.aplicativocadastro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215481582609-qaqlnc4fdukkh9jvqvogicol96vgq32c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sud.barros.com.aplicativocadastro",
+            "certificate_hash": "0f95b9ca8a2468e227ef67661cb12978b2639398"
+          }
+        },
+        {
+          "client_id": "215481582609-39k8npjd7ilu19u1agd7mts8gi6h211u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhCIE7nAEoOnKMAXd6PyE9-RTKc8YGKUU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215481582609-39k8npjd7ilu19u1agd7mts8gi6h211u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
