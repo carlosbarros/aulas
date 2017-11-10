@@ -12,6 +12,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.io.FileOutputStream;
 
 public class CadastrarActivity extends AppCompatActivity implements View.OnClickListener{
@@ -21,6 +25,9 @@ public class CadastrarActivity extends AppCompatActivity implements View.OnClick
     private EditText etMarca;
     private EditText etModelo;
     private Spinner spCategoria;
+
+    private FirebaseDatabase database;
+    private DatabaseReference myRef;
 
     private String categorias[]={"esportivo","sw4", "utilitário","basico","completo"};
 
@@ -36,6 +43,10 @@ public class CadastrarActivity extends AppCompatActivity implements View.OnClick
         spCategoria = (Spinner)findViewById(R.id.spCategoria);
 
         btSalvar.setOnClickListener(this);
+
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference();
+
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, categorias);
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
@@ -66,7 +77,25 @@ public class CadastrarActivity extends AppCompatActivity implements View.OnClick
                 String modelo = etModelo.getText().toString().trim();
                 String marca = etMarca.getText().toString().trim();
 
-                String dados = placa + " "+ modelo+ " "+ marca;
+                Veiculo v = new Veiculo(marca,modelo,placa);
+
+                myRef = database.getReference("veiculos");
+
+                myRef.push().setValue(v, new DatabaseReference.CompletionListener() {
+                    @Override
+                    public void onComplete(DatabaseError databaseError,
+                                           DatabaseReference databaseReference) {
+                        String uniqueKey = databaseReference.getKey();
+
+                        Toast.makeText(CadastrarActivity.this, "Cadastrado.",
+                                Toast.LENGTH_SHORT).show();
+
+
+                    }
+                });
+
+
+                /*String dados = placa + " "+ modelo+ " "+ marca;
                 String filename = "dados";
 
                 try {
@@ -76,7 +105,7 @@ public class CadastrarActivity extends AppCompatActivity implements View.OnClick
                 }catch (Exception e)
                 {
 
-                }
+                }*/
 
                 break;
         }

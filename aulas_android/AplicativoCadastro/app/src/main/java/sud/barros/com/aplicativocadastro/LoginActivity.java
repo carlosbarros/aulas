@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText etSenha;
     private Button btLogin;
     private FirebaseAuth mAuth;
+    private FirebaseUser currentUser;
 
 
     @Override
@@ -36,13 +37,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         btLogin.setOnClickListener(this);
         mAuth = FirebaseAuth.getInstance();
 
+
+
     }
 
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+        currentUser= mAuth.getCurrentUser();
         //updateUI(currentUser);
     }
 
@@ -84,6 +87,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 // ...
                             }
                         });
+
+                if(currentUser!=null)
+                {
+                    Toast.makeText(LoginActivity.this, "Logado.",
+                            Toast.LENGTH_SHORT).show();
+                    Intent telaMenu = new Intent(getApplicationContext(),MenuActivity.class);
+                    startActivity(telaMenu);
+                }
 
                /* if(email.equals("carlos@gmail.com") && senha.equals("123"))
                 {
