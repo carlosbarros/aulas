@@ -1,7 +1,6 @@
 package sud.barros.com.aplicativocadastro;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +16,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.FileOutputStream;
+
+import modelo.Veiculo;
 
 public class CadastrarActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -79,6 +80,8 @@ public class CadastrarActivity extends AppCompatActivity implements View.OnClick
 
                 Veiculo v = new Veiculo(marca,modelo,placa);
 
+                MenuActivity.controleVeiculo.adicionar(v);
+
                 myRef = database.getReference("veiculos");
 
                 myRef.push().setValue(v, new DatabaseReference.CompletionListener() {
@@ -95,7 +98,7 @@ public class CadastrarActivity extends AppCompatActivity implements View.OnClick
                 });
 
 
-                /*String dados = placa + " "+ modelo+ " "+ marca;
+                String dados = placa + " "+ modelo+ " "+ marca;
                 String filename = "dados";
 
                 try {
@@ -105,7 +108,7 @@ public class CadastrarActivity extends AppCompatActivity implements View.OnClick
                 }catch (Exception e)
                 {
 
-                }*/
+                }
 
                 break;
         }

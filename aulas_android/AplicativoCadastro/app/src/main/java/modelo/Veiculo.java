@@ -1,4 +1,4 @@
-package sud.barros.com.aplicativocadastro;
+package modelo;
 
 /**
  * Created by carlosbarros on 09/11/2017.
@@ -6,6 +6,7 @@ package sud.barros.com.aplicativocadastro;
 
 public class Veiculo {
 
+    private int codigo;
     private String marca;
     private String modelo;
     private String placa;
@@ -41,6 +42,14 @@ public class Veiculo {
 
     public void setPlaca(String placa) {
         this.placa = placa;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     @Override

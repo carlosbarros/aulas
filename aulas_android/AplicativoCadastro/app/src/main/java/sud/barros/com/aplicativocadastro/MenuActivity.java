@@ -6,11 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import controle.ControleVeiculo;
+
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
     //primeiro passo
     private Button btCadastrar;
     private Button btListar;
+    public static ControleVeiculo controleVeiculo;
 
 
 
@@ -18,6 +21,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        controleVeiculo = new ControleVeiculo(getApplicationContext());
 
         //segundo passo
         btCadastrar = (Button)findViewById(R.id.btCadastrar);

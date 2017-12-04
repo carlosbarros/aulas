@@ -1,6 +1,5 @@
 package sud.barros.com.aplicativocadastro;
 
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -14,9 +13,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import modelo.Veiculo;
 
 public class ListarActivity extends AppCompatActivity {
 
@@ -82,9 +82,7 @@ public class ListarActivity extends AppCompatActivity {
         lvLista = (ListView)findViewById(R.id.lvLista);
         String filename = "dados";
 
-       /* byte dados[]=new byte[1024];
-
-       // byte dados[]={};
+        byte dados[]=new byte[1024];
 
         try {
             FileInputStream fos = openFileInput(filename);
@@ -96,9 +94,10 @@ public class ListarActivity extends AppCompatActivity {
         }catch (Exception e)
         {
 
-        }*/
+        }
 
         veiculos = new ArrayList<Veiculo>();
+        veiculos = MenuActivity.controleVeiculo.listar();
 
 
         adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,veiculos);
